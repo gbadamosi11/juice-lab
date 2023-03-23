@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button{
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.button-full{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 102%;
+    padding: 16px 24px;
+    color: #DDB3ED;
+    background: rgba(224, 138, 253, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+/* font-family: sans-seri;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Space Mono', monospace; */
+html{
+    background-color: #1D0E16;
+    height: 100%;
+}
+
+#header{
+    height: 100vh;
+}
+#header .nav-top{
+    background-color: #F2E5F5;
+    padding: 12px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .nav-top p{
+    margin: auto;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .navbar div{
+    padding: 6px 8px;
+    background: rgba(224, 138, 253, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+#header .header-big{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 235px;
+    line-height: 120%;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.2);
+
+}
+#header span{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#header span div{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+#header span div h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+    color: #F1D369;
+    width: 100%;
+    /* margin: auto 80px; */
+}
+#header span .can{
+    position: absolute;
+    left: 635px;
+    top: -155px;
+}
+#header .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+#header .banner .banner-img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.button-primary{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 102%;
+    padding: 16px 30px;
+    color: #DDB3ED;
+    background: #8724AF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+}
+.text{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #F2E5F5;
+    width: 42%;
+    margin: 111px auto;
+}
+
+.card-container{
+    height: 140vh;
+    padding: 70px 100px;
+    background: #F2E5F5;
+    border-radius: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.card-heading {
+    width: 72%;
+    margin: 0 auto;
+}
+.card-heading h3{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    background: #E7FFB3;
+    width: 280px;
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card-heading h2{
+    margin-top: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 71px;
+    text-align: center;
+    color: #50046F;
+}
+.card-items{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.card-items .item-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-items .item-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.card-items .item-container div img{
+    position: absolute;
+    bottom: 110px;
+}
+.card-items .item-container div h1{
+    color: transparent;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #50046F;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-items .item-container div h3{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #50046F;
+}
+.card-items .item-container div p{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #642080;
+    opacity: 0.3;
+}
+.card-button{
+    padding: 12px 24px;
+    background: #1D0E16;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 102%;
+    color: #DDB3ED;
+}
+#testimony{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    position: relative;
+    margin-top: 30px;
+}
+#testimony .testimony-heading img{
+    position: absolute;
+    left: 581px;
+    top: -227px;
+}
+#testimony .testimony-heading h1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 170px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.2);
+}
+#testimony .testimony-box{
+    padding: 64px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimony .testimony-box .logo{
+    padding-top: 64px;
+}
+#testimony .testimony-box .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimony .testimony-box .content img{
+    width: 48px;
+    height: 48px;
+}
+#testimony .testimony-box .content p{
+    padding: 0 50px;
+    width: 79%;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #F2E5F5;
+}
+
+#experience{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin-top: 180px;
+}
+#experience .details{
+    width: 40%;
+}
+#experience .details h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #F2E5F5;
+}
+#experience .details p{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(242, 229, 245, 0.59);
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#reach{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    margin: 15rem 0;
+    position: relative;
+}
+#reach h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 71px;
+    text-align: center;
+    color: #F2E5F5;
+}
+#reach p{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(242, 229, 245, 0.59);
+    margin-bottom: 45px;
+}
+#reach .reach-img{
+    display: flex;
+}
+#reach .reach-img img{
+    width: 100%;
+}
+#reach h1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 170px;
+    line-height: 257px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 350px;
+    left: 289px;
+}
+footer{
+    background-color:#F2E5F5;
+}
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-details .newsletter{
+    width: 30%;
+}
+.footer-details .newsletter p{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(29, 14, 22, 0.7);
+}
+.footer-details .newsletter .form{
+    display: flex;
+    gap: 16px;
+}
+.footer-details .newsletter .form input{
+    padding: 12px;
+    width: 375px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(29, 14, 22, 0.7);
+}
+.footer-details .newsletter .form button{
+    height: 48px;
+    background: #1D0E16;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+.footer-list h4{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1D0E16;
+    margin-bottom: 20px;
+}
+.footer-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-list ul li{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.footer-list ul li,
+.footer-list ul li a,
+.footer-copyright ul a{
+    font-family: 'Space Mono', Monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(29, 14, 22, 0.7);
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 8rem;
+}
+.footer-copyright .line{
+    height: 2px;
+    width: 100%;
+    background: rgba(29, 14, 22, 0.7);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.footer-copyright ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-copyright h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D0E16;
+    text-align: center;
+}
