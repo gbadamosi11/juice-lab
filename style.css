@@ -484,3 +484,91 @@ footer{
     color: #1D0E16;
     text-align: center;
 }
+
+
+@media (max-width: 900px){
+    
+}
+@media (max-width: 640px){
+
+}
+@media (max-width: 477px){
+    #header{
+        height: 200vh !important;
+    }
+    .section-p1{
+        padding: 10px 40px;
+    }
+    #header .nav-top{
+        padding: 12px 40px;
+    }
+    #header .nav-top p {
+        font-size: 12px;
+    }
+    
+    #header .header-big{
+        font-size: 55px;
+    }
+
+    #header span div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header span div h2{
+        font-size: 32px;
+    }
+    #header span .can{
+        left: 100px;
+        top: -51px;
+        width: 200px;
+    }
+    #header .banner{
+        margin-top: 50px;
+    }
+    #header .banner .banner-img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .button-full {
+        display: none;
+    }
+    .text {
+        font-size: 14px;
+        width: 80%;
+    }
+    .card-container {
+        height: 150vh;
+        padding: 20px 10px;
+        margin-bottom: 100px;
+    }
+    .card-heading {
+        width: 100%;
+    }
+    .card-heading h2 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .card-heading h3 {
+        font-size: 12px;
+        padding: 14px 0;
+    }
+    .card-items .item-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+    }
+    .card-items .item-container div img {
+        bottom: 110px;
+        width: 130px;
+    }
+    #testimony .testimony-heading img {
+        left: 95px;
+        top: -145px;
+        width: 200px;
+    }
+    #testimony .testimony-heading h1 {
+        font-size: 36px;
+    }
+}
