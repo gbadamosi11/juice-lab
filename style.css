@@ -286,7 +286,6 @@ html{
 }
 #testimony .testimony-box .content{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -530,7 +529,7 @@ footer{
         margin-top: 30px;
         width: 100%;
     }
-    .button-full {
+    .navbar .button-full {
         display: none;
     }
     .text {
@@ -570,5 +569,73 @@ footer{
     }
     #testimony .testimony-heading h1 {
         font-size: 36px;
+    }
+    #testimony .testimony-box .content p {
+        padding: 0;
+        width: 100%;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #testimony .testimony-box {
+        padding: 15px;
+    }
+    #testimony .testimony-box .content img {
+        width: 28px;
+        height: 28px;
+    }
+    #testimony .testimony-box .logo {
+        padding-top: 30px;
+    }
+    #experience {
+        padding: 10px 40px;
+    }
+    #experience img{
+        width: 324px;
+    }
+    #experience .details {
+        width: 100%;
+    }
+    #experience .details h2 {
+        font-size: 28px;
+    }
+    #experience .details p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    #reach {
+        padding: 10px 40px;
+        margin: 10rem 0;
+    }
+    #reach h2 {
+        font-size: 32px;
+    }
+    #reach p {
+        font-size: 16px;
+        text-align: center;
+    }
+    #reach .reach-img {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .footer-details .newsletter {
+        width: 100%;
+    }
+    .footer-details {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .footer-details .newsletter .form {
+        flex-direction: column;
+    }
+    .footer-details .newsletter .form input {
+        width: 100%;
+    }
+    .footer-copyright ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
